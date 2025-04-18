@@ -2,7 +2,7 @@
     session_start();
 
       if(empty($_POST) or (empty($_POST["usuario"]) or (empty($_POST["senha"])))){
-      print "<script>location.href="index.php";</script>";
+      print "<script>location.href='index.php';</script>";
       }
 
       include("config.php");
@@ -24,8 +24,8 @@ if($qtd > 0){
     $_SESSION["usuario"] = $usuario;
     $_SESSION["nome"] = $row->nome;
     $_SESSION["tipo"] = $row->tipo;
-    print "<script>location.href='dashoard.php';</script>";
+    print "<script>location.href='dashboard.php';</script>";
 }else{
-    print "<script>alert('Usuário e/ou senha incorreto(s)');
+    print "<script>alert('Usuário e/ou senha incorreto(s)');</script>";
     print "<script>location.href='index.php';</script>";
 }
