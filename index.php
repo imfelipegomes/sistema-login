@@ -32,7 +32,7 @@
           </div>
           <div>
             <div class="mb-3">
-            <button type="submit" class="btn">Enviar</button>
+            <button type="submit" class="btn">Entrar</button>
             </div>
           </div>
         </form>
